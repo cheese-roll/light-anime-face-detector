@@ -20,7 +20,7 @@ This repository is tested under the following settings:
 - mxnet
 - numpy
 
-You might need other libraries (e.g. tqdm, imutils, etc.) in order to run the demo. If you want to utilize your GPU `mxnet`, please consult its [official installation guide](https://mxnet.apache.org/get_started).
+You might need other libraries (e.g. tqdm, imutils, etc.) in order to run the demo. If you want to utilize your GPU, please consult [MXNet's official installation guide](https://mxnet.apache.org/get_started).
 
 ## Usage
 
@@ -100,6 +100,8 @@ Currently, the detector cannot handle these cases well.
 - Faces that are very close to others
 
 All of these except the last one could be solvable by using more data and / or image augmentation. We could let the detector pre-label the data for us, which should reduce the workload when we manually correct them afterwards.
+
+A consistent rule for bounding box might also be needed to minimize the bounding box loss (right now, it's a rough estimation of how much padding we will need for a face).
 
 `size` (and `resize_scale`) also needs to be carefully chosen since the trained dataset is not big enough for the model to learn continuous face scaling.
 
