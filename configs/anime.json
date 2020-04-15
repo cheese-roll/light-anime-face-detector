@@ -1,0 +1,8 @@
+{
+    "lffd_config_path": "models/anime/lffd.json",
+    "model_path": "models/anime/model.params",
+    "symbol_path": "models/anime/symbol.json",
+    "nms_threshold": 0.3,
+    "confidence_threshold": 0.7,
+    "size": 384
+}
