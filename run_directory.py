@@ -4,19 +4,12 @@
 
 import os
 import cv2
-import sys
 import glob
 import json
 import time
-import random
-import hashlib
 import imutils
 import argparse
 import more_itertools
-import numpy as np
-
-from tqdm import tqdm
-from collections import defaultdict
 
 from core.detector import LFFDDetector
 

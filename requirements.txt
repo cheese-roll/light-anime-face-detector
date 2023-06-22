@@ -1,0 +1,6 @@
+mxnet==1.6.0
+opencv-contrib-python
+opencv-python
+more_itertools
+numpy
+tqdm

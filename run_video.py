@@ -2,17 +2,10 @@
     Run detector on the video and save the output as another video.
 """
 
-import os
 import cv2
-import sys
-import glob
 import json
 import time
-import random
-import hashlib
-import imutils
 import argparse
-import numpy as np
 
 from tqdm import tqdm
 from collections import defaultdict
